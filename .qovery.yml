@@ -1,0 +1,15 @@
+---
+application:
+  name: "blog"
+  project: "Blog"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "blog"
+  version: "12"
+routers:
+- name: "main-blog"
+  routes:
+  - application_name: "blog"
+    paths:
+    - "/*"
